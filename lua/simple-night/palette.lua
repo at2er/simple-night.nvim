@@ -9,7 +9,7 @@ M.tcolors = {
     blue           = "#6FA3F8",
     magenta        = "#B838AC",
     cyan           = "#3990BF",
-    white          = "#62676D",
+    white          = "#7278A0",
 
     bright_black   = "#252B35",
     --bright_black   = "#62676D",

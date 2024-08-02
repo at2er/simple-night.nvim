@@ -6,11 +6,11 @@ local M = {}
 local function nvim_groups()
     return {
         Normal = {
-            bg = config.transparent and nil or palette.tcolors.black,
+            bg = config.transparent and "NONE" or palette.tcolors.black,
             fg = palette.tcolors.bright_white
         },
         NormalFloat = {
-            bg = config.transparent and nil or palette.tcolors.bright_black,
+            bg = config.transparent and "NONE" or palette.tcolors.bright_black,
             fg = palette.tcolors.bright_white
         },
         FloatBorder = { fg = palette.tcolors.bright_black },
@@ -57,9 +57,9 @@ local function nvim_groups()
         Comment = { fg = palette.tcolors.white, italic = config.styles.comments.italic },
 
         Constant = { fg = palette.tcolors.yellow },
-        String = { fg = palette.tcolors.green },
+        String = { fg = palette.tcolors.bright_green },
         Character = { fg = palette.tcolors.green },
-        Number = { fg = palette.tcolors.green },
+        Number = { fg = palette.tcolors.bright_green },
         Boolean = { fg = palette.tcolors.magenta },
         Operator = { fg = palette.tcolors.bright_magenta },
         Include = { fg = palette.tcolors.bright_magenta },
@@ -77,6 +77,17 @@ local function nvim_groups()
         DiagnosticInfo = { fg = palette.tcolors.blue },
         DiagnosticHint = { fg = palette.tcolors.bright_blue },
         DiagnosticOk = { fg = palette.tcolors.bright_green },
+
+        LspCodeLens = { fg = palette.tcolors.white },
+        LspSignatureActiveParameter = { bg = palette.tcolors.bright_black, fg = palette.tcolors.bright_white },
+
+        Directory = { fg = palette.tcolors.bright_green },
+        Added = { fg = palette.tcolors.bright_green },
+        Changed = { fg = palette.tcolors.bright_yellow },
+        Removed = { fg = palette.tcolors.bright_red },
+        DiffAdd = { bg = palette.tcolors.bright_green },
+        DiffChange = { bg = palette.tcolors.bright_yellow },
+        DiffDelete = { fg = palette.tcolors.bright_red },
     }
 end
 
