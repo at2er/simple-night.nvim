@@ -10,7 +10,7 @@ local function groups(config)
         NeoTreeGitConflict = { fg = palette.tcolors.bright_yellow },
         NeoTreeGitDeleted = { fg = palette.tcolors.bright_red },
         NeoTreeGitIgnored = { fg = palette.tcolors.bright_black },
-        NeoTreeGitModified = { fg = palette.tcolors.red },
+        NeoTreeGitModified = { fg = palette.tcolors.bright_red },
         NeoTreeGitUnstaged = { fg = palette.tcolors.bright_red },
         NeoTreeGitUntracked = { fg = palette.tcolors.red },
         NeoTreeGitStaged = { fg = palette.tcolors.green },

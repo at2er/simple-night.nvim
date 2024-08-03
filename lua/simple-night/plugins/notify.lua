@@ -5,9 +5,7 @@ local utils = require("simple-night.utils")
 local function groups(config)
     local palette = require("simple-night.palette")
     return {
-        IblIndent = { fg = palette.tcolors.bright_black },
-        IblWhitespace = { fg = palette.tcolors.bright_black },
-        IblScope = { fg = palette.tcolors.blue }
+        NotifyBackground = { bg = palette.tcolors.bright_black },
     }
 end
 
