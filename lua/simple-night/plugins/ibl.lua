@@ -7,7 +7,7 @@ local function groups(config)
     return {
         IblIndent = { fg = palette.tcolors.bright_black },
         IblWhitespace = { fg = palette.tcolors.bright_black },
-        IblScope = { fg = palette.tcolors.blue }
+        IblScope = { fg = palette.tcolors.bright_blue }
     }
 end
 

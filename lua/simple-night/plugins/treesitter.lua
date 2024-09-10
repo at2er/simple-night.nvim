@@ -1,7 +1,7 @@
 local M = {}
 local utils = require("simple-night.utils")
 
----@param config? simple-night.Config
+---@param config simple-night.Config
 local function groups(config)
     local palette = require("simple-night.palette")
     return {
@@ -10,14 +10,14 @@ local function groups(config)
         ["@variable.parameter"] = { link = "@variable" },
         --["@variable.parameter.builtin"] = { link = "" },
         ["@variable.menber"] = { link = "@variable" },
-        ["@function"] = { fg = palette.tcolors.bright_blue },
-        ["@function.builtin"] = { fg = palette.tcolors.cyan },
+        ["@function"] = { fg = palette.tcolors.bright_white },
+        ["@function.builtin"] = { fg = palette.tcolors.bright_blue },
         --["@function.call"] = { fg = palette.tcolors.cyan },
         --["@function.macro"] = { fg = palette.tcolors.bright_cyan },
         ["@attribute"] = { fg = palette.tcolors.bright_red },
         ["@punctuation.delimiter"] = { fg = palette.tcolors.white },
         ["@module"] = { fg = palette.tcolors.bright_red, italic = true },
-        ["@keyword.directive"] = { fg = palette.tcolors.bright_magenta, italic = true },
+        ["@keyword.directive"] = { fg = palette.tcolors.bright_red, bold = config.styles.keywords.bold },
         --["@constant"] = { link = "" },
 
         ["@markup.heading"]   = { fg = palette.tcolors.white, bold = true },
@@ -30,7 +30,7 @@ local function groups(config)
     }
 end
 
----@param config? simple-night.Config
+---@param config simple-night.Config
 function M.setup(config)
     utils.set_hl_groups(groups(config))
 end

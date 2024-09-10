@@ -11,7 +11,7 @@ local function groups(config)
             italic = true,
             strikethrough = true
         },
-        CmpItemAbbrMatch = { fg = palette.tcolors.blue, italic = true },
+        CmpItemAbbrMatch = { fg = palette.tcolors.bright_blue, italic = true },
         CmpItemAbbrMatchFuzzy = {
             fg = palette.tcolors.blue,
             italic = true,

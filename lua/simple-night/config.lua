@@ -6,7 +6,7 @@ M.default = {
     transparent = false,
     styles = {
         comments = { italic = true },
-        keywords = { italic = true },
+        keywords = { bold = false },
     },
     plugins = {
         "cmp",
@@ -14,7 +14,6 @@ M.default = {
         "neotree",
         "treesitter",
         "lsp",
-        "notify",
     },
 }
 
