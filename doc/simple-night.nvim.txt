@@ -1,0 +1,28 @@
+*simple-night.nvim.txt* 	For neovim	Last change: 2024 Aug 3
+
+=======================================================================
+1. Configuartion		*simple-night.nvim-configuartion*
+
+Additional settings for simple-night are:
+>lua
+  -- Default options:
+  require("simple-night").setup({
+    transparent = false,
+    styles = {
+      comments = { italic = true },
+      keywords = { bold = false },
+    },
+    plugins = {
+      "cmp",
+      "ibl",
+      "neotree",
+      "treesitter",
+      "lsp",
+    },
+  })
+<
+
+=======================================================================
+2. Extra highlight groups	*simple-night.nvim-extra-highlight-groups*
+
+vim:tw=78:ts=8:noet:ft=help:norl:
